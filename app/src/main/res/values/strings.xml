@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Recipe App</string>
+    <string name="add_meals_to_db">Add Meals to DB</string>
+    <string name="search_for_meals_by_ingredient">Search for Meals By Ingredient</string>
+    <string name="search_for_meals">Search for Meals</string>
+    <string name="retrieve_meals">Retrieve Meals</string>
+    <string name="save_meals_to_database">Save meals to Database</string>
+    <string name="name_of_the_ingredient">Name of The Ingredient</string>
+    <string name="search">Search</string>
+    <string name="search_using_a_meal_name_or_an_ingredient">Search using meal name or ingredient</string>
+    <string name="search_for_meals_in_web">Search For Meals In Web</string>
+    <string name="cannot_find_matching_meals">Cannot find any matching meals</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15sp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="@drawable/burger2"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_add_meal_to_db"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:layout_gravity="center"
+        android:text="@string/add_meals_to_db" />
+
+    <Button
+        android:id="@+id/btn_search_by_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:layout_gravity="center"
+        android:text="@string/search_for_meals_by_ingredient" />
+
+    <Button
+        android:id="@+id/btn_search_meals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:layout_gravity="center"
+        android:text="@string/search_for_meals" />
+
+    <Button
+        android:id="@+id/btn_search_meals_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:layout_gravity="center"
+        android:text="@string/search_for_meals_in_web" />
+
+</LinearLayout>

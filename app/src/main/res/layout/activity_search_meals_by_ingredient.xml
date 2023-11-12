@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    android:gravity="start"
+    android:orientation="vertical"
+    android:background="@drawable/burger3"
+    tools:context=".SearchMealsByIngredientActivity">
+
+    <EditText
+        android:id="@+id/txt_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20sp"
+        android:autofillHints="true"
+        android:background="@color/white"
+        android:hint="@string/name_of_the_ingredient"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:padding="20sp" />
+
+    <Button
+        android:id="@+id/btn_retrieve_meals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:layout_gravity="center"
+        android:text="@string/retrieve_meals" />
+
+    <Button
+        android:id="@+id/btn_save_to_db"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:layout_gravity="center"
+        android:text="@string/save_meals_to_database" />
+
+    <ScrollView
+        android:id="@+id/scrl_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15sp">
+
+        <TextView
+            android:id="@+id/txt_meal_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            android:scrollbars="vertical" />
+
+    </ScrollView>
+</LinearLayout>

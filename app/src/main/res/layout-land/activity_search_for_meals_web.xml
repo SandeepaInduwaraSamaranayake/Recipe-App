@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    android:gravity="start"
+    android:orientation="horizontal"
+    android:background="@drawable/burger_5_land"
+    tools:context=".SearchMealsWebActivity">
+
+    <!-- Left LinearLayout for EditText and Button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="5sp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20sp"
+            android:autofillHints="true"
+            android:background="@color/white"
+            android:hint="@string/search_using_a_meal_name_or_an_ingredient"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:padding="20sp" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:layout_gravity="center"
+            android:text="@string/search" />
+
+    </LinearLayout>
+
+    <!-- Right LinearLayout for RecyclerView -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5sp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</LinearLayout>
